@@ -1,0 +1,96 @@
+body {
+    background-image: url('background.jpg');
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+figure {
+    border: 5px solid white;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgb(0 0 0);
+    transition: ease;
+    transition-duration: .3s;
+}
+
+figcaption {
+    background-color: white;
+    border: 1px solid white;
+    margin: 0;
+    padding: 0 6px;
+    font-family: 'Cedarville Cursive';
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.img1 {
+    transform: rotate(-4deg);
+
+}
+
+.img2 {
+    transform: rotate(6deg);
+
+}
+
+.img3 {
+    transform: rotate(-15deg);
+
+}
+
+.img4 {
+    transform: rotate(10deg);
+
+}
+
+.img5 {
+    transform: rotate(10deg);
+
+}
+
+.img6 {
+    transform: rotate(-5deg);
+
+}
+
+.img7 {
+    transform: rotate(5deg);
+
+}
+
+.img8 {
+    transform: rotate(-8deg);
+
+}
+
+.img9 {
+    transform: rotate(6deg);
+
+}
+
+.img10 {
+    transform: rotate(-2deg);
+
+}
+
+figure:hover {
+    transform: rotate(0);
+    transform: scale(1.5);
+    z-index: 1;
+}
