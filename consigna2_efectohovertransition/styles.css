@@ -21,83 +21,97 @@ h2 {
     justify-items: center;
 }
 
-.btn-container {
-    width: 210px;
-
-}
-
-.btn1 .icon {
-    position: absolute;
-    top: calc(45px / 2 - 3px);
-    left: 6px;
-    color: darkolivegreen;
-    margin: 10px;
-    transition-timing-function: ease-out;
-    transition-duration: 1s;
-}
-
 button {
     height:90px;
     border-radius: 5px;
     font-size: xx-large;
+    font-weight: bolder;
     text-transform: uppercase;
+    color: gray;
     width: 200px;
     border-top: 1px solid darkslategray;
     border-left: 1px solid darkslategray;
     border-right: 2px solid gray;
     border-bottom:  2px solid gray;
 }
+.icon {
+    width: 20px;
+}
+
+.btn-container {
+    width: 210px;
+}
 
 .btn1 {
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
     position: relative;
+    width: 210px;
+    overflow: hidden;
+    background-color: teal;
+    border: 2px solid black;
 }
 
-.btn1:hover {
-    width: 195px;
-    border-top: 2px solid gray;
-    border-left: 2px solid gray;
-    border-right: 1px solid darkslategray;
-    border-bottom:  1px solid darkslategray;
-    background-color: #97a0ac;
-}
-
-.btn1:hover .icon {
-    transform: scale(1) translateX(135px) rotate(180deg);
+.btn1 .icon {
+    margin: 0 auto;
+    left: 90px;
     color: white;
+    top: -35px;
+    position: absolute;
+    transition-timing-function: ease;
+    transition-duration: .3s;
+}
+
+.btn1 p {
+    width: 130px;
+    margin: 0;
+    left: 37px;
+    top: 27px;
+    color: white;
+    position: absolute;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+}
+.btn1:hover {
+    border: 2px solid white;
+}
+.btn1:hover .icon {
+    transform: translateY(67px);
+}
+
+.btn1:hover p {
+    transform: translateY(55px);
+    color: transparent;
 }
 
 .btn2 {
-    transition-duration: .5s;
-    transition-timing-function: ease-in;
-    width: 100px;
+    transition-duration: 2s;
+    width: 170px;
     position: relative;
-    text-align: center;
+    text-align: left;
+    overflow: hidden;
+    background-color: thistle;
 }
 
 .btn2 .icon {
     transition-duration: 1s;
-    transition-timing-function: ease;
+    color: black;
+    padding-left: 10px;
 }
 
-.btn2:hover {
-    width: 150px;
-    border-top: 2px solid gray;
-    border-left: 2px solid gray;
-    border-right: 1px solid darkslategray;
-    border-bottom:  1px solid darkslategray;
-    background-color: black;
+.btn2:active {
+    background-color: #6585ab;
 }
 
-.btn2:hover .icon {
-    transform: scale(2);
-    display: block;
+
+.btn2:active .icon {
     color: white;
+    transform: translateX(170px);
 }
 
 
 .btn3 {
-    transition-duration: .3s;
+    transition-duration: .1s;
     transition-timing-function: ease-in;
     border-top: 2px solid gray;
     border-left: 2px solid gray;
@@ -110,8 +124,7 @@ button {
 }
 
 .btn3 .icon {
-    display: none;
-    transition: .4s;
+    transition-duration: 0;
 }
 
 .btn3:hover {
@@ -124,7 +137,6 @@ button {
 }
 
 .btn3:hover .icon {
-    display: block;
     color: white;
 }
 
@@ -134,7 +146,7 @@ button {
 }
 img {
     overflow: hidden;
-    width: 200px;
+    width: 300px;
     padding: 0;
     transition-duration: 1s;
 }
@@ -145,6 +157,7 @@ figure {
     border: 10px solid black;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 figcaption {
@@ -154,7 +167,7 @@ figcaption {
     padding: 15px 0;
     opacity: 0;
     text-align: center;
-    transition-duration: 2s;
+    transition-duration: 1s;
     position: absolute;
     top: 0;
     left: 0;
@@ -162,38 +175,44 @@ figcaption {
 
 .fig1:hover figcaption {
     opacity: .7;
-    transform: translateY(70px);
+    transform: translateY(110px);
 }
 
 .fig2 figcaption {
     transition-duration: 1s;
-    width: 50%;
-    font-weight: bolder;
+    padding: 20px;
     text-transform: uppercase;
-    padding: 2px;
-    top: -30px;
-    left: 105px;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: text-top;
+    top: 0px;
+    left: 300px;
     border-bottom-left-radius: 50px;
 }
 
 .fig2:hover figcaption {
-    transform: translateY(30px);
-    height: 20px;
+    transform: translateX(-120px);
     opacity: 1;
     right: 0;
 }
 
 .fig3 figcaption {
     opacity: 0;
-    width: 100px;
+    width: 25%;
     position: absolute;
-    left: 50px;
-    top: 32px; 
+    left: -50px;
+    top: 170px; 
+    border-top-right-radius: 50px;
 }
 
 .fig3:hover figcaption {
-    opacity: .8;
-    transform: scale(1.5);
+    opacity: 1;
+    background-color: white;
+    color: black;
+    transform: scale(1.5) translateY(-110px) translateX(175px);
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0;
 
 }
 
