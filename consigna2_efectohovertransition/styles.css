@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 150px;
 }
 
 h2 {
@@ -17,19 +18,22 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-items: center;
 }
 
 .btn-container {
     width: 210px;
+
 }
 
-.icon {
+.btn1 .icon {
     position: absolute;
     top: calc(45px / 2 - 3px);
     left: 6px;
     color: darkolivegreen;
     margin: 10px;
-    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-duration: 1s;
 }
 
 button {
@@ -59,11 +63,70 @@ button {
 }
 
 .btn1:hover .icon {
-    transform: scale(2);
-    transform: rotate(180deg);
-    right: 0px;
+    transform: scale(1) translateX(135px) rotate(180deg);
+    color: white;
 }
 
+.btn2 {
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
+    width: 100px;
+    position: relative;
+    text-align: center;
+}
+
+.btn2 .icon {
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.btn2:hover {
+    width: 150px;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-right: 1px solid darkslategray;
+    border-bottom:  1px solid darkslategray;
+    background-color: black;
+}
+
+.btn2:hover .icon {
+    transform: scale(2);
+    display: block;
+    color: white;
+}
+
+
+.btn3 {
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-right: 4px solid darkslategray;
+    border-bottom:  4px solid darkslategray;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    text-align: center;
+}
+
+.btn3 .icon {
+    display: none;
+    transition: .4s;
+}
+
+.btn3:hover {
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 2px solid darkslategray;
+    border-bottom:  2px solid darkslategray;
+    background-color: #6585ab;
+    transform: scale(0.99);
+}
+
+.btn3:hover .icon {
+    display: block;
+    color: white;
+}
 
 /* CAPTION */
 .caption {
@@ -73,10 +136,12 @@ img {
     overflow: hidden;
     width: 200px;
     padding: 0;
+    transition-duration: 1s;
 }
 
 figure {
     background-color: white;
+    position: relative;
     border: 10px solid black;
     display: flex;
     flex-direction: column;
@@ -84,20 +149,109 @@ figure {
 
 figcaption {
     background-color: black;
+    width: 100%;
     color: white;
     padding: 15px 0;
+    opacity: 0;
+    text-align: center;
+    transition-duration: 2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fig1:hover figcaption {
+    opacity: .7;
+    transform: translateY(70px);
+}
+
+.fig2 figcaption {
+    transition-duration: 1s;
+    width: 50%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 2px;
+    top: -30px;
+    left: 105px;
+    border-bottom-left-radius: 50px;
+}
+
+.fig2:hover figcaption {
+    transform: translateY(30px);
+    height: 20px;
+    opacity: 1;
+    right: 0;
+}
+
+.fig3 figcaption {
+    opacity: 0;
+    width: 100px;
+    position: absolute;
+    left: 50px;
+    top: 32px; 
+}
+
+.fig3:hover figcaption {
+    opacity: .8;
+    transform: scale(1.5);
+
+}
+
+.fig3:hover img {
+    transform: scale(.9);
 }
 
 /* IMAGENES */
-
 .imghover {
 display: flex;
 }
 
-.hov1 {
+.hov1, .hov2, .hov3 {
+    border: 1px solid black;
+    transition-duration: 1s;
+}
+
+.imghover figcaption {
+    position: relative;
+    transform: none;
+    opacity: 1;
+    transition-duration: 0;
+}
+
+.hov1:hover {
+    transform: scale(2);
+    z-index: 1;
     
 }
+
 .hov2 {
+    width: 200px;
+    text-align: center;
+    flex-direction: row;
+}
+
+.hov2 figcaption {
+    width: 50%;
+    transition-duration: 0s;
+}
+
+.hov2 img {
+    align: right;
+    width: 50%;
+    height: 100%;
+    transition-duration: .3s;
+}
+
+.hov2:hover {
+    flex-direction: column;
+}
+
+.hov2:hover figcaption {
+    width: 100%;
+}
+.hov2:hover img {
+    transform:  scaleX(2) translateX(25px);
+    z-index: 1;
     
 }
 .hov2 {
