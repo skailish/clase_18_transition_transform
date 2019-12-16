@@ -1,0 +1,105 @@
+body {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+/* BOTONES */
+.botones {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn-container {
+    width: 210px;
+}
+
+.icon {
+    position: absolute;
+    top: calc(45px / 2 - 3px);
+    left: 6px;
+    color: darkolivegreen;
+    margin: 10px;
+    transition-duration: 0.5s;
+}
+
+button {
+    height:90px;
+    border-radius: 5px;
+    font-size: xx-large;
+    text-transform: uppercase;
+    width: 200px;
+    border-top: 1px solid darkslategray;
+    border-left: 1px solid darkslategray;
+    border-right: 2px solid gray;
+    border-bottom:  2px solid gray;
+}
+
+.btn1 {
+    transition-duration: 0.2s;
+    position: relative;
+}
+
+.btn1:hover {
+    width: 195px;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-right: 1px solid darkslategray;
+    border-bottom:  1px solid darkslategray;
+    background-color: #97a0ac;
+}
+
+.btn1:hover .icon {
+    transform: scale(2);
+    transform: rotate(180deg);
+    right: 0px;
+}
+
+
+/* CAPTION */
+.caption {
+    display: flex;
+}
+img {
+    overflow: hidden;
+    width: 200px;
+    padding: 0;
+}
+
+figure {
+    background-color: white;
+    border: 10px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption {
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+}
+
+/* IMAGENES */
+
+.imghover {
+display: flex;
+}
+
+.hov1 {
+    
+}
+.hov2 {
+    
+}
+.hov2 {
+    
+}
