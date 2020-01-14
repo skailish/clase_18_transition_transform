@@ -41,46 +41,55 @@ figcaption {
 
 .img1 {
     transform: rotate(-4deg);
+    filter: brightness(10%);
 
 }
 
 .img2 {
     transform: rotate(6deg);
+    filter: contrast(50%);
 
 }
 
 .img3 {
     transform: rotate(-15deg);
+    filter: grayscale(100%);
 
 }
 
 .img4 {
     transform: rotate(10deg);
+    filter: sepia(100%);
 
 }
 
 .img5 {
     transform: rotate(10deg);
+    filter: saturate(100%);
 
 }
 
 .img6 {
     transform: rotate(-5deg);
+    filter: invert(100%);
 
 }
 
 .img7 {
     transform: rotate(5deg);
+    filter: drop-shadow(100%);
 
 }
 
 .img8 {
     transform: rotate(-8deg);
+    filter: hue-rotate(100%);
 
 }
 
 .img9 {
     transform: rotate(6deg);
+    filter: blur(100%);
 
 }
 
