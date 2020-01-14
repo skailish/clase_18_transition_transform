@@ -41,31 +41,31 @@ figcaption {
 
 .img1 {
     transform: rotate(-4deg);
-    filter: brightness(10%);
+    filter: brightness(2);
 
 }
 
 .img2 {
     transform: rotate(6deg);
-    filter: contrast(50%);
+    filter: contrast(2);
 
 }
 
 .img3 {
     transform: rotate(-15deg);
-    filter: grayscale(100%);
+    filter: grayscale(1);
 
 }
 
 .img4 {
     transform: rotate(10deg);
-    filter: sepia(100%);
+    filter: sepia(1);
 
 }
 
 .img5 {
     transform: rotate(10deg);
-    filter: saturate(100%);
+    filter: saturate(2);
 
 }
 
@@ -77,24 +77,25 @@ figcaption {
 
 .img7 {
     transform: rotate(5deg);
-    filter: drop-shadow(100%);
+    filter: drop-shadow(1px 2px 1px black);
 
 }
 
 .img8 {
     transform: rotate(-8deg);
-    filter: hue-rotate(100%);
+    filter: hue-rotate(10deg);
 
 }
 
 .img9 {
     transform: rotate(6deg);
-    filter: blur(100%);
+    filter: blur(2px);
 
 }
 
 .img10 {
     transform: rotate(-2deg);
+    filter: opacity(10%);
 
 }
 
